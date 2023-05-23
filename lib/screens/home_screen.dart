@@ -1,10 +1,9 @@
 import 'package:designs/widgets/background.dart';
+import 'package:designs/widgets/custom_bottom_navigation.dart';
 import 'package:designs/widgets/page_title.dart';
 import 'package:flutter/material.dart';
 
-
 class HomeScreen extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,13 +14,13 @@ class HomeScreen extends StatelessWidget {
           // Home body
           _HomeBody()
         ],
-      )
-   );
+      ),
+      bottomNavigationBar: CustomBottomNavigation(),
+    );
   }
 }
 
 class _HomeBody extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
